@@ -7,16 +7,29 @@
     <title>Recruitement</title>
 
     <script src="JS\jobs.js" type="text/javascript"></script>
-
+    <script src="JS\include-html-files.js" type="text/javascript"></script>
+    
 </head>
 
 <body>
+ 
+        
         <main>
             Recruitement Website Comming Soon!!!!!!!!!!!
             <input type="button" value="click here to get job vacancies" onclick="getjobVacancies()"/>  
+
+            <div w3-include-html="./HTML/header.html"></div>
+
+            <div w3-include-html="./HTML/job-details.html"></div>
+
+
+
+            <!-- <div w3-include-html="./job-feed.html">include feed</div> -->
         </main>
     </div>
-  
+    <script>
+        includeHTML();
+        </script>
 </body>
 
 </html>
