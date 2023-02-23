@@ -1,5 +1,5 @@
 function getjobVacancies(){  
-    fetch('./JSON/job-vacancy-json', {
+    fetch('./json/job-vacancy-json', {
         method: 'GET',
         headers: {
             'Accept': 'application/json',
