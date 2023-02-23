@@ -10,7 +10,12 @@ function getjobVacancies(){
     {
         console.log(JSON.stringify(data))
     } ) 
+
+
+
+
    }  
+
 
 function applyJob() {
      var opneModal = true
