@@ -1,0 +1,16 @@
+
+/* 
+* { box-sizing: border-box; } */
+
+.column1{
+    background-color: plum;
+}
+
+.column2{
+    background-color: palevioletred;
+}
+
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
