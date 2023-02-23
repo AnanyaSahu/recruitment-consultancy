@@ -1,5 +1,5 @@
 function getjobVacancies(){  
-    fetch('./JSON/job-vacancy-json', {
+    fetch('../Assets/JSON/job-vacancy-json', {
         method: 'GET',
         headers: {
             'Accept': 'application/json',
@@ -11,3 +11,7 @@ function getjobVacancies(){
         console.log(JSON.stringify(data))
     } ) 
    }  
+
+function applyJob() {
+     var opneModal = true
+}
