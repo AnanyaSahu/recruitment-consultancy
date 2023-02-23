@@ -1,1 +1,21 @@
+
+:root {
+    --background-color: rgb(144, 155, 164);
+  }
+
 * { box-sizing: border-box; }
+
+body {
+    background-color: var(--background-color);
+
+}
+
+.card{
+    margin: 10px;
+    border-style: double;
+    padding: 10px;
+}
+
+.display-flex{
+    display: flex;
+}
