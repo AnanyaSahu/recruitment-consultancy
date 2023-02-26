@@ -1,9 +1,5 @@
-
-
-* { box-sizing: border-box; }
-
-.header{
+.footer{
     position: sticky;
-    top: 0px;
+    bottom: 0px;
     background-color: lightblue;
 }
