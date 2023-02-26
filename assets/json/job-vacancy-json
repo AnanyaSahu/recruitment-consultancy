@@ -1,7 +1,16 @@
 {
     "jobId": "1",
-    "jobName": "job name",
-    "jobdescription": "job description",
+    "jobPosition": "job name",
+    "companyName": "companyName",
+    "location": "location",
+    "salary": "salary",
+    "jobDescription": "job description",
+    "jobResponsibilities" : "Responsibilities",
+    "jobRequirements": "job Requirements",
     "jobType": "job type",
-    "jobCategory": "job category"
+    "skills": "skills",
+    "jobCategory": "job category",
+    "postingDate": "date",
+    "rating": "ratings",
+    "jobPerksAndBenifits": "jobPerksAndBenifits"
 }

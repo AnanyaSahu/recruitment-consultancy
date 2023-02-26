@@ -7,4 +7,54 @@
 
 .row{
     margin-left: 0px;
+    margin-right: 0px;
+}
+
+.display-flex{
+    display: inline-flex;
+}
+.display-content{
+    display: contents;
+}
+.card{
+    min-height: 166px;
+}
+/* .card.card-right{
+    margin-left: 3px;
+}
+.card.card-left{
+    margin-right: 3px;
+} */
+
+.pad0{
+    padding: 0%;
+}
+
+.pad-left{
+    padding-right: 0%;
+}
+
+.benefit {
+    width: 156px;
+    height: 72px;
+    display: inline-block;
+    text-align: center;
+    /* -webkit-box-sizing: border-box; */
+    box-sizing: border-box;
+    /* vertical-align: top; */
+    overflow: hidden;
+}
+
+.benefit-label {
+    font-size: 13px;
+    /* font-weight: 400; */
+    /* color: #333; */
+    /* line-height: 21px; */
+    margin-top: 5px;
+    padding: 0 25px;
+    /* word-break: break-word; */
+}
+ .benefit-img {
+    width: 20px;
+    height: 20px;
 }
