@@ -1,16 +1,84 @@
-
-/* 
-* { box-sizing: border-box; } */
-
 .column1{
-    background-color: plum;
+    background-color: aliceblue;
 }
-
 .column2{
-    background-color: palevioletred;
+    background-color: goldenrod;
 }
 
 .row{
     margin-left: 0px;
     margin-right: 0px;
 }
+
+.display-flex{
+    display: inline-flex;
+}
+.display-content{
+    display: contents;
+}
+.card{
+    min-height: 166px;
+}
+/* .card.card-right{
+    margin-left: 3px;
+}
+.card.card-left{
+    margin-right: 3px;
+} */
+
+.pad0{
+    padding: 0%;
+}
+
+.pad-left{
+    padding-right: 0%;
+}
+
+.benefit {
+    width: 156px;
+    height: 72px;
+    display: inline-block;
+    text-align: center;
+    /* -webkit-box-sizing: border-box; */
+    box-sizing: border-box;
+    /* vertical-align: top; */
+    overflow: hidden;
+}
+
+.benefit-label {
+    font-size: 13px;
+    /* font-weight: 400; */
+    /* color: #333; */
+    /* line-height: 21px; */
+    margin-top: 5px;
+    padding: 0 25px;
+    /* word-break: break-word; */
+}
+ .benefit-img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Breadcrumb CSS start; taken from https://www.w3schools.com/howto/howto_css_breadcrumbs.asp */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
+  /* Breadcrumb CSS End; taken from https://www.w3schools.com/howto/howto_css_breadcrumbs.asp */
