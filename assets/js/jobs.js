@@ -1,3 +1,5 @@
+
+
 function getjobVacancies(){  
     fetch('../assets/json/job-vacancy-json', {
         method: 'GET',
@@ -14,7 +16,7 @@ function getjobVacancies(){
         for(var i in data)
         result.push([i, data [i]]);
 
-        console.log(result)
+        // console.log(result)
         // for(var i in result)
         // {
         //     console.log(result[i][1])
@@ -62,5 +64,23 @@ function getjobVacancies(){
 
 
 function applyJob() {
-     var opneModal = true
+    var modal = document.getElementById("apply-modal-container");
+    modal.style.display = "block";
 }
+
+  
+
+function closeModal() {
+    var modal = document.getElementById("apply-modal-container");
+    modal.style.display = "none";
+}
+
+function showToast() {
+    var x = document.getElementById("toastNotification");
+    closeModal()
+    x.style.display = "block"; 
+    setTimeout(() => {
+        x.style.display = "none"; 
+    }, 1500);
+}
+

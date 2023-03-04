@@ -5,5 +5,8 @@
 .header{
     position: sticky;
     top: 0px;
-    background-color: lightblue;
+    min-height: 40px;
+    display: inline-grid;
+    width: 100%;
+    align-content: center;
 }
