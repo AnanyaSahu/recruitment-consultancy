@@ -26,6 +26,7 @@
     margin-right: 3px;
 } */
 
+
 .pad0{
     padding: 0%;
 }
@@ -82,3 +83,77 @@ ul.breadcrumb {
     text-decoration: underline;
   }
   /* Breadcrumb CSS End; taken from https://www.w3schools.com/howto/howto_css_breadcrumbs.asp */
+
+
+  /* Apply Job Modal CSS Start */
+  input[type=text]{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  .apply-modal {
+    display: inline-flex; 
+    /* position: sticky;  */
+    z-index: 2; 
+    /* padding-top: 100px; */
+    /* /* left: 0; */
+    top: 210px; 
+    align-content: center;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    /* background-color: rgb(0,0,0);  */
+    background-color: rgba(0,0,0,0.4); 
+  }
+
+  .apply-modal-container{
+    display: none; 
+    position: fixed;
+    top: 0;
+    overflow: auto;
+    z-index: 1; 
+    width: 100%;
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .apply-modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  /* Apply Job Modal CSS End */
+
+  /* Toast Notification Start */
+  #toastNotification {
+    display: none; /* Hidden by default. Visible on click */
+    min-width: 360px; /* Set a default minimum width */
+    /* margin-left: -125px; Divide value of min-width by 2 */
+    position: fixed; /* Sit on top of the screen */
+    /* z-index: 1; Add a z-index if needed */
+    left: 45%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+    color: #fff; /* White text color */
+    background-color: rgb(1, 104, 1); /* Black background color */
+    text-align: center; /* Centered text */
+    border-radius: 14px; /* Rounded borders */
+    padding: 20px; /* Padding */
+   
+  }
+/* 
+  #snackbar.show {
+    display: block; 
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  } */
+
+    /* Toast Notification End */

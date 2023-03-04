@@ -1,7 +1,8 @@
 
 :root {
-    --background-color: rgb(144, 155, 164);
+    --background-color: rgb(216, 222, 239);
   }
+
 
 * { box-sizing: border-box; }
 
@@ -19,3 +20,16 @@ body {
 .display-flex{
     display: flex;
 }
+
+.cursor-pointer{
+    cursor: pointer;
+  }
+
+  .primary-color {
+    color:white;
+    background-color:rgb(21, 40, 120);
+  }
+  
+  .float-right{
+    float: right;
+  }
