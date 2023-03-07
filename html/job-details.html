@@ -15,7 +15,7 @@
 
     <link href="../assets/styles/global.css" rel="stylesheet">
     <link href="../assets/styles/job-details.css" rel="stylesheet">
-    <script src="../assets/js/jobs.js" type="text/javascript"></script>
+
 
 
 
@@ -23,6 +23,7 @@
 
 <body>
         <main>
+            <!-- <div class="loader" id="loader"></div> -->
 
             <!-- Breadcrum start taken from https://www.w3schools.com/howto/howto_css_breadcrumbs.asp -->
             <ul class="breadcrumb">
@@ -37,11 +38,12 @@
             <div class="card card-left">
                 <div class="card-content display-content">
                     <h3 class=" ">Senior Software Engineer</h3>
-                    <div class="display-flex"><i class="fa-solid fa-briefcase"></i> <h6> &nbsp;Volkswagen IT Services</h6> </div>
-                    <div class="display-flex"><i class="fa-sharp fa-solid fa-location-dot"></i>  <span>Pune, India</span> </div>
-                    <div class="display-flex"><i class="fa-solid fa-wallet"></i> <h6> &nbsp;Salary: Euro 50000-75000</h6> </div>
-                    <div class="display-flex"><i class="fa-solid fa-calendar"></i> <span class="">Job type: full-time</span> 
-                        <button type="button" class="primary-color" onclick="applyJob()">Apply For This Job</button></div>
+                    <div class="display-flex"><i class="fa-solid fa-briefcase"></i> &nbsp;<h6> Volkswagen IT Services</h6> </div>
+                    <div class="display-flex"><i class="fa-sharp fa-solid fa-location-dot"></i>  &nbsp;<h6>Pune, India</h6> </div>
+                    <div class="display-flex"><i class="fa-solid fa-wallet"></i> &nbsp;<h6> Salary: Euro 50000-75000</h6> </div>
+                    <div class="display-flex"><i class="fa-solid fa-calendar"></i> &nbsp;<h6 >Job type: full-time</h6> 
+                        <div class = "apply-job-btn"><button type="button" class="btn-primary" onclick="applyJob()">Apply For This Job</button></div>
+                    </div>
                     
                 </div>
              </div>
@@ -164,26 +166,26 @@
                     <div class="apply-modal-content">
                       <span id="close-btn" class="fa-sharp fa-solid fa-xmark cursor-pointer float-right" onclick="closeModal()"></span>
                   
-                      <form class="">
+                      <form id="jobApplicationFrom">
                         <div class="container">
                           <h1>Apply for Job</h1>
                           <p>Please fill in this form to apply for job.</p>
                           <hr>
                           <label for="name"><b>Full Name</b></label>
-                          <input type="text" placeholder="Enter full name" name="name" >
+                          <input type="text" placeholder="Enter full name" name="name" required>
                           <br><br>
                           <label for="email"><b>Email</b></label>
-                          <input type="text" placeholder="Enter Email" name="email" >
+                          <input type="text" placeholder="Enter Email" name="email" pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/"> <!-- validation for email from URL: https://www.w3resource.com/javascript/form/email-validation.php -->
                           <br><br>
                           <label for="phone"><b>Phone</b></label>
-                          <input type="text" placeholder="Enter phone" name="phone" >
+                          <input type="text" placeholder="Enter phone" name="phone" pattern="[0-9]{10}">
                           <label for="cv"><b>Upload your CV</b></label>
-                          <input type="file" id="myFile" name="cv">
+                          <input type="file" id="myFile" name="cv" required>
                           
                         <br><br>
                           <div class="clearfix">
                             <!-- <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button> -->
-                            <button type="button" class="primary-color" onclick="showToast()">Apply</button>
+                            <button type="button" class="btn-primary" onclick="showToast()">Apply</button>
                           </div>
                         </div>
                       </form>
@@ -200,6 +202,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/js/jobs.js" type="text/javascript"></script>
 
         </main>
 

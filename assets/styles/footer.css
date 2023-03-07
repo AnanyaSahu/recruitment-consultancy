@@ -1,5 +1,5 @@
 .footer{
-    position: sticky;
+    position: fixed;
     bottom: 0px;
     min-height: 40px;
     display: inline-grid;
