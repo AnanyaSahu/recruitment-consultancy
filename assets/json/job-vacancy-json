@@ -8,13 +8,14 @@
         "salary": "Not Disclosed",
         "jobDescription": "Work with developers to design algorithms and flowchaProduce clean efficient code based on specifications Integrate software components and third-party program \n Verify and deploy programs and systems \n Troubleshoot debug and upgrade existing software\n Gather and evaluate user feedback\n Recommend and execute improvements \nCreate technical documentation for reference and reporting\n Develop an initial Implementation plan based on the clients requirements and available resources\n Advise clients on the configuration of the system to support their business practices\n Support clients in working through implementation issues and potential roadblocks Perform installation and configuration of software\n Working closely with the development teams to integrate the Platform\n Creation and Implementation of scripts as per the product/project customization\n Provide documentation and end-user training for applications \n Providing internal training to the team to ensure proper handshake of knowledge transfer \nPost development monitor and support ERP solution in ships",
         "jobResponsibilities": "Responsibilities",
-        "jobRequirements": "Proven experience as a Software Developer, Software Engineer or similar role\n Familiarity with Agile development methodologies\nExperience with software design and development in a test-driven environment \n Knowledge of coding languages (C#, JavaScript, Jquery & .net)",
+        "jobRequirements": "Proven experience as a Software Developer, Software Engineer or similar role Familiarity with Agile development methodologies\nExperience with software design and development in a test-driven environment \n Knowledge of coding languages (C#, JavaScript, Jquery & .net)",
         "jobType": "Full-time",
-        "skills": ["ERP","Software Design", "Testing,", "Jquery","Software coding", "JS"],
+        "skills": ["ERP","Software Design", "Testing", "Jquery","Software coding", "JS"],
         "jobCategory": "Permanenet",
-        "postingDate": "30/01/2023",
+        "postingDate": "03/23/2023",
         "rating": "4",
-        "jobPerksAndBenifits": ["Work From Home","Soft Skill Training"]
+        "hiring": "1",
+        "jobPerksAndBenifits": ["Team Outings","Work From Home","Soft Skill Training"]
       },
  "2":{
     "jobId": "2",
@@ -31,6 +32,7 @@
     "jobCategory": "Permanenet",
     "postingDate": "26/01/2023",
     "rating": "3",
+    "hiring": "2",
     "jobPerksAndBenifits": ["Work From Home","Soft Skill Training", "International Relocation"]
   },
   "3":{
@@ -48,6 +50,7 @@
     "jobCategory": "Permanenet",
     "postingDate": "20/02/2023",
     "rating": "3",
+    "hiring": "1",
     "jobPerksAndBenifits": ["Work From Home","Soft Skill Training", "International Relocation", "Health Insurance", "Cafateria"]
   },
   "4":{
@@ -65,6 +68,7 @@
     "jobCategory": "Temperarory",
     "postingDate": "25/02/2023",
     "rating": "5",
+    "hiring": "1",
     "jobPerksAndBenifits": ["Work From Home","Soft Skill Training", "International Relocation"]
   },
   "5":{
@@ -82,6 +86,7 @@
     "jobCategory": "Permanenet",
     "postingDate": "23/03/2023",
     "rating": "5",
+    "hiring": "3",
     "jobPerksAndBenifits": ["Work From Home","Soft Skill Training", "International Relocation"]
   },
   "6":{
@@ -99,6 +104,7 @@
     "jobCategory": "Temperarory",
     "postingDate": "26/02/2023",
     "rating": "5",
+    "hiring": "1",
     "jobPerksAndBenifits": ["Soft Skill Training", "International Relocation"]
   },
   "7":{
@@ -116,7 +122,8 @@
     "jobCategory": "Permanenet",
     "postingDate": "26/02/2023",
     "rating": "5",
-    "jobPerksAndBenifits": ["Work From Home","Soft Skill Training", "Relocation"]
+    "hiring": "2",
+    "jobPerksAndBenifits": ["Work From Home","Soft Skill Training"]
   },
   "8":{
     "jobId": "8",
@@ -133,7 +140,8 @@
     "jobCategory": "Permanenet",
     "postingDate": "26/02/2023",
     "rating": "5",
-    "jobPerksAndBenifits": ["Work From Home","Soft Skill Training", "Relocation"]
+    "hiring": "1",
+    "jobPerksAndBenifits": ["Work From Home","Soft Skill Training", "International Relocation"]
   },
 
   "9":{
@@ -151,7 +159,8 @@
     "jobCategory": "Permanenet",
     "postingDate": "26/02/2023",
     "rating": "5",
-    "jobPerksAndBenifits": ["Work From Home","Soft Skill Training", "Relocation"]
+    "hiring": "1",
+    "jobPerksAndBenifits": ["Work From Home","Soft Skill Training", "International Relocation"]
   },
   
   "10":{
@@ -169,6 +178,7 @@
     "jobCategory": "Permanenet",
     "postingDate": "26/02/2023",
     "rating": "5",
-    "jobPerksAndBenifits": ["Work From Home","Soft Skill Training", "Relocation"]
+    "hiring": "3",
+    "jobPerksAndBenifits": ["Work From Home","Soft Skill Training", "International Relocation"]
 }
 }
