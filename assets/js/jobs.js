@@ -1,5 +1,4 @@
 
-
 function getjobVacancies(){  
     fetch('../assets/json/job-vacancy-json', {
         method: 'GET',
@@ -22,9 +21,6 @@ function getjobVacancies(){
         //     console.log(result[i][1])
         // }
     } ) 
-
-
-
 
    }  
 
@@ -57,9 +53,6 @@ function getjobVacancies(){
         }
     } ) 
 
-
-
-
    }  
 
 
@@ -83,4 +76,12 @@ function showToast() {
         x.style.display = "none"; 
     }, 1500);
 }
+
+function butto() {  
+
+    alert("You are being redirected to new page !");  
+
+} 
+
+
 
