@@ -15,10 +15,7 @@
     <!-- <script src="assets/js/jobs.js" type="text/javascript"></script> -->
     <script src="../assets/js/jobs.js" type="text/javascript"></script>
     <script src="../assets/js/include-html-files.js" type="text/javascript"></script>
-    <script>
-   getjobByJobId(1);
-   includeHTML();
-        </script>
+
 
     <link href="../assets/styles/global.css" rel="stylesheet">
     <link href="../assets/styles/job-details.css" rel="stylesheet">
@@ -29,9 +26,10 @@
 </head>
 
 <body>
+    <div w3-include-html="./header.html"></div>
         <main>
             <!-- <div class="loader" id="loader"></div> -->
-            <div w3-include-html="./html/header.html"></div>
+           
             <!-- Breadcrum start taken from https://www.w3schools.com/howto/howto_css_breadcrumbs.asp -->
             <ul class="breadcrumb">
                 <li><a href="/index.html">Home</a> </li>
@@ -49,9 +47,8 @@
                     <div class="display-flex"><i class="fa-sharp fa-solid fa-location-dot"></i>  &nbsp;<h6 id="job-location"></h6> </div>
                     <div class="display-flex"><i class="fa-solid fa-calendar"></i>&nbsp;<h6 id="job-experience"></h6> </div>
                     <div class="display-flex"><i class="fa-solid fa-briefcase"></i> &nbsp;<h6 id="job-category"> </h6> </div>
-                    <div class="display-flex"><i class="fa-solid fa-calendar"></i> &nbsp;<h6 id="job-type"></h6> 
-                    <div class = "apply-job-btn"><button type="button" class="btn-primary" onclick="applyJob()">Apply For This Job</button></div>
-                    </div>
+                    <div class="display-flex"><i class="fa-solid fa-calendar"></i> &nbsp;<h6 id="job-type"></h6></div>
+                    <div><button type="button" class="btn-primary" onclick="applyJob()">Apply For This Job</button></div>
                     
                 </div>
              </div>
@@ -70,7 +67,7 @@
                 </div> 
             </div>
                 <!-- job description card-->
-                <div class="container-fluid row">
+                <div class="container-fluid row row2">
                     <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 pad0">   
                     <div class="card card-left">
                         <div class="card-content  ">
@@ -79,11 +76,12 @@
 
                                 <h4>Job Description</h4><p id="job-description"></p>
 
-                                <h6> Roles and Responsibilities</h6><p id="job-roles"></p>
+                                <h5> Roles and Responsibilities</h5><p id="job-roles"></p>
                                 
                                 <h4>Job Requirements</h4><p id="job-requirements"></p>
 
                                 <h4>Job Skills</h4><p id="job-skills"></p>
+                                
     
                              
                             </div>
@@ -125,7 +123,7 @@
                         </div> 
                     </div>
                 
-            <!-- Modal Start -->
+            <!-- Job Application Modal Start -->
             <div class="apply-modal-container" id = "apply-modal-container">
                 <div id="apply-modal" class="apply-modal">
                     <!-- Modal content -->
@@ -149,8 +147,8 @@
                           <input type="file" id="myFile" name="cv">
                           
                         <br><br>
-                          <div class="clearfix">
-                            <p id="error-msg"></p>
+                          <div class="">
+                            <p id="error-msg" Class ='errorMsg'></p>
                             <button type="button" class="btn-primary" onclick="showToast()">Apply</button>
                           </div>
                         </div>
@@ -158,12 +156,12 @@
                     </div>
                 </div>
                   </div>
-                  <!-- Modal End -->
+                  <!-- Job Application Modal End -->
 
                   <!-- Toast Notification  Start -->
                   <div id="toastNotification">Your application is successful!</div>
-                             <!-- Toast Notification  End -->
-                             <div w3-include-html="./html/footer.html"></div>
+                  <!-- Toast Notification  End -->
+                  <div w3-include-html="./footer.html"></div>
         </main>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
@@ -171,11 +169,9 @@
 
         </main>
         <script>
-            // getjobVacancies()
-            // includeHTML();
-            // getjobByJobId(1);
-            </script>
-
+            getjobByJobId(8);
+            includeHTML();
+                 </script>
 </body>
 
 </html>
