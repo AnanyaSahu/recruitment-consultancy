@@ -33,3 +33,9 @@ body {
   .float-right{
     float: right;
   }
+
+  .btn-primary{
+    color:white;
+    border-radius: 6px;
+    background-color:rgb(21, 40, 120);
+  }

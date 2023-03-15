@@ -1,8 +1,9 @@
 .footer{
-    position: sticky;
+    position: fixed;
     bottom: 0px;
     min-height: 40px;
     display: inline-grid;
     width: 100%;
     align-content: center;
+    justify-content: center;
 }
