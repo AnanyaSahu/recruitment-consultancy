@@ -1,6 +1,6 @@
-
- let jobFound = null
- let jobList = []
+let jobFound = null
+let jobFeeds = []
+let jobIndex = 0
 function getjobVacancies(){  
     console.log('getjobVacancies')
     fetch('../assets/json/job-vacancy-json', {
@@ -12,32 +12,61 @@ function getjobVacancies(){
     .then(response => response.json())
     .then((data) =>
     {
-        // var json_data = {"2013-01-21":1,"2013-01-22":7};
-        jobList = [];
+        for(var i in data) 
+        jobFeeds.push( data [i]);
 
-        for(var i in data)
-        jobList.push([i, data [i]]);
-
-        // console.log(result)
-        // for(var i in result)
-        // {
-            console.log(jobList)
-
-        // }
+        createContentOfJobFeed(jobFeeds)
+        // filterJobFeeds('jobType','Part-time')
     } ) 
 
 
 
 
    }  
+   function navigateToDetailPage(ind) {
+    window.location.href = "./html/job-details.html";
+    jobIndex = 1
+
+}
+   function filterJobFeeds(filterType, filterValue) {
+    var filteredList = []
+
+    if(filterType == "jobCategory")
+    filteredList = jobFeeds.filter((jobfeed) => jobfeed.jobCategory.indexOf(filterValue) >-1)
+    
+    if(filterType == "jobType")
+    filteredList = jobFeeds.filter((jobfeed) => jobfeed.jobType.indexOf(filterValue) > -1)
+
+    console.log(filteredList)
+    createContentOfJobFeed(filteredList)
+
+   }
+
+
+   function createContentOfJobFeed(list) {
+    var jobPosting = document.getElementById("jobs-postings"); 
+    var ele = ""
+    jobPosting.innerHTML = ""
+    for(jobdata in list) {
+        job = list[jobdata]
+        ele += "<div class='card'><div class='card-content display-content'><h4 class=''>"+job.jobPosition +"</h4>"+
+        "<div class='display-flex'><h6> "+ job.companyName+"</h6> &nbsp;&nbsp;<h6>"+job.rating+"</h6> <i class='fa-solid fa-star'></i></div>" +
+        "<div class='display-flex'><i class='fa-solid fa-calendar'></i>&nbsp;<h6></h6>"+ job.experience+"</div>"+
+        "<div class='display-flex'><i class='fa-sharp fa-solid fa-location-dot'></i>  <span>"+job.location+"</span> </div>"+
+        "<div class='display-flex'><i class='fa-solid fa-calendar'></i> <span>Employment type:</span><span class='job-type'>"+
+        job.jobType+"</span>  &nbsp;<span id='job-category'>"+ job.jobCategory+"</span></div>"+     
+        "<hr>"+
+        "<div class='display-flex'>  <span>Posted </span><span id='posted-date'>"+job.postingDate+"</span><span></span> days ago</span></div>"
+        +"</div></div>"
+    }
+    jobPosting.innerHTML = ele
+   }
+
 
    function getjobByJobId(jobId){  
-    console.log('getjobByJobId')
-    console.log(jobList)
-    // var loader = document.getElementById("loader");
-    // setTimeout(() => {
-    //     loader.style.display = "none"; 
-    // }, 1500);
+    console.log('jobFound')
+    // var jobId = jobIndex
+    // console.log(jobFeeds)
     fetch('../assets/json/job-vacancy-json', {
         method: 'GET',
         headers: {
@@ -57,10 +86,12 @@ function getjobVacancies(){
         {
 
             if(result[i][1].jobId == jobId) {
+
                 jobFound = result[i][1]
 
+                
                 console.log(jobFound)
-                showJobDetails();
+                showJobDetails(jobFound);
             }
 
 
@@ -125,7 +156,7 @@ function showToast() {
 function showJobDetails() {
     
     console.log("showJobDetails")
-    // console.log(jobFound.jobPosition)
+    console.log(jobFound.jobPosition)
     var jobposition = document.getElementById("job-position");
     jobposition.innerHTML = jobFound.jobPosition
 
