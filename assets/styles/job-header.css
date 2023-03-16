@@ -1,9 +1,9 @@
 * { box-sizing: border-box; }
 
 .header {
-    overflow: hidden;
+    /* overflow: hidden;
     background-color: #f1f1f1;
-    padding: 20px 10px;
+    padding: 20px 10px; */
 
 }
 
@@ -39,4 +39,13 @@
         text-align: left;
     }
 
+}
+
+.header{
+    position: sticky;
+    top: 0px;
+    min-height: 40px;
+    display: inline-grid;
+    width: 100%;
+    align-content: center;
 }

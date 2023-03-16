@@ -1,4 +1,5 @@
-
+let jobFound = null
+let jobList = []
 
 function getjobVacancies(){  
     console.log('getjobVacancies')
