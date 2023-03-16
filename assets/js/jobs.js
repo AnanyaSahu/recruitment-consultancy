@@ -1,6 +1,6 @@
 let jobFound = null
-let jobList = []
-
+let jobFeeds = []
+let jobIndex = 0
 function getjobVacancies(){  
     console.log('getjobVacancies')
     fetch('../assets/json/job-vacancy-json', {
@@ -63,9 +63,10 @@ function getjobVacancies(){
    }
 
 
-   function getjobByJobId(){  
-    var jobId = jobIndex
-    console.log(jobId)
+   function getjobByJobId(jobId){  
+    console.log('jobFound')
+    // var jobId = jobIndex
+    // console.log(jobFeeds)
     fetch('../assets/json/job-vacancy-json', {
         method: 'GET',
         headers: {
@@ -85,10 +86,12 @@ function getjobVacancies(){
         {
 
             if(result[i][1].jobId == jobId) {
+
                 jobFound = result[i][1]
 
+                
                 console.log(jobFound)
-                showJobDetails();
+                showJobDetails(jobFound);
             }
 
 
@@ -153,7 +156,7 @@ function showToast() {
 function showJobDetails() {
     
     console.log("showJobDetails")
-    // console.log(jobFound.jobPosition)
+    console.log(jobFound.jobPosition)
     var jobposition = document.getElementById("job-position");
     jobposition.innerHTML = jobFound.jobPosition
 
