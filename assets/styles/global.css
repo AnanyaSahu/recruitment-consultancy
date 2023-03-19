@@ -1,41 +1,93 @@
-
 :root {
-    --background-color: rgb(216, 222, 239);
-  }
-
-
-* { box-sizing: border-box; }
+  --background-color: rgb(237, 240, 246);
+}
 
 body {
-    background-color: var(--background-color);
-
+  background-color: var(--background-color);
 }
 
-.card{
-    margin: 10px;
-    border-style: double;
-    padding: 10px;
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+  justify-content: center;
 }
 
-.display-flex{
-    display: flex;
+.card {
+  margin: 10px;
+  border-style: double;
+  padding: 10px;
 }
 
-.cursor-pointer{
-    cursor: pointer;
-  }
+.card-align {
+  justify-content: center;
+}
 
-  .primary-color {
-    color:white;
-    background-color:rgb(21, 40, 120);
-  }
-  
-  .float-right{
-    float: right;
-  }
+.last-card {
+  margin-bottom: 50px;
+}
 
-  .btn-primary{
-    color:white;
-    border-radius: 6px;
-    background-color:rgb(21, 40, 120);
-  }
+.display-flex {
+  display: flex;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.primary-color {
+  color: white;
+  background-color: rgb(56, 74, 146);
+}
+
+.float-right {
+  float: right;
+}
+
+.btn-primary {
+  color: white;
+  border-radius: 6px;
+  background-color: rgb(56, 74, 146);
+}
+
+.job-feed-header {
+  margin-top: 30px;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.job-feed-search {
+  margin-top: 30px;
+}
+
+.serch-item-btn {
+  padding: 0 !important;
+  align-self: center;
+  font-size: 21px;
+  justify-content: center;
+  display: contents;
+}
+
+.search-items {
+  padding: 0 !important;
+  margin: 5px;
+}
+
+.form-control {
+  padding: 10px 15px;
+  border-radius: 0.375rem;
+  ;
+  margin-bottom: 10px;
+}
+
+.fa-solid {
+  font-size: small;
+  position: relative;
+  top: 4px;
+}
+
+.toast {
+  text-overflow: inherit;
+  width: 30%;
+  left: 35%;
+}
