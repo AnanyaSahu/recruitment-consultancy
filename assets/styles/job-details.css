@@ -132,7 +132,6 @@ input[type=text] {
 /* Toast Notification Start */
 #toastNotification {
   display: none; /* Hidden by default*/
-  min-width: 360px;
   position: fixed;
   bottom: 60px;
   color: #fff;
