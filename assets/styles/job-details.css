@@ -1,7 +1,3 @@
-.row {
-  margin-left: 0px;
-  margin-right: 0px;
-}
 
 .display-flex {
   display: inline-flex;
@@ -33,6 +29,7 @@
   padding-right: 0%;
 }
 
+/* benefit and perk card start */
 .benefit {
   width: 156px;
   height: 72px;
@@ -52,6 +49,7 @@
   width: 20px;
   height: 20px;
 }
+/* benefit and perk card end */
 
 /* Breadcrumb CSS start; taken from https://www.w3schools.com/howto/howto_css_breadcrumbs.asp */
 ul.breadcrumb {
@@ -100,11 +98,8 @@ input[type=text] {
   top: 210px;
   align-content: center;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -116,11 +111,8 @@ input[type=text] {
   z-index: 1;
   width: 100%;
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -131,16 +123,17 @@ input[type=text] {
   border: 1px solid #888;
   width: 80%;
 }
+.error-msg {
+  color: red;
+}
 
 /* Apply Job Modal CSS End */
 
 /* Toast Notification Start */
 #toastNotification {
-  display: none;
-  /* Hidden by default. Visible on click */
+  display: none; /* Hidden by default*/
   min-width: 360px;
   position: fixed;
-  /* left: 45%; */
   bottom: 60px;
   color: #fff;
   background-color: rgb(56, 104, 56);
@@ -148,26 +141,6 @@ input[type=text] {
   border-radius: 14px;
   padding: 20px;
   justify-content: center;
-
 }
 
 /* Toast Notification End */
-
-.errorMsg {
-  /* fon: red; */
-}
-
-#toastNotificationcc {
-  display: block;
-  /* Hidden by default. Visible on click */
- 
-  position: fixed;
-  /* left: 45%; */
-  bottom: 60px;
-  color: #fff;
-  background-color: rgb(56, 104, 56);
-  text-align: center;
-  border-radius: 14px;
-  padding: 20px;
-  justify-content: center;
-}
