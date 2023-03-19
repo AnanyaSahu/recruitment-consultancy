@@ -73,10 +73,10 @@ function createContentOfJobFeed(list) {
             job = list[jobdata]
             ele += "<div class='card'><div class='card-content display-content'><h4 class='cursor-pointer' onclick='navigateToDetailPage(" + job.jobId + ")'>" + job.jobPosition + "</h4>" +
                 "<div class='display-flex'><h6> " + job.companyName + "</h6> &nbsp;&nbsp;<h6>" + job.rating + "</h6> <i class='fa-solid fa-star'></i></div>" +
-                "<div class='display-flex'><i class='fa-solid fa-calendar'></i>&nbsp;<h6></h6>" + job.experience + "</div>" +
-                "<div class='display-flex'><i class='fa-sharp fa-solid fa-location-dot'></i>  <span>" + job.location + "</span> </div>" +
-                "<div class='display-flex'><i class='fa-solid fa-calendar'></i> <span>Employment type:</span><span class='job-type'>" +
-                job.jobType + "</span>  &nbsp;<span id='job-category'>" + job.jobCategory + "</span></div>" +
+                "<div class='display-flex'><i class='fa-solid fa-calendar'></i>&nbsp;&nbsp;<h6></h6>" + job.experience + "</div>" +
+                "<div class='display-flex'><i class='fa-sharp fa-solid fa-location-dot'></i>&nbsp;&nbsp;  <span>" + job.location + "</span> </div>" +
+                "<div class='display-flex'><i class='fa-solid fa-calendar'></i>&nbsp;&nbsp; <span>Employment type:</span><span class='job-type'>&nbsp;" +
+                job.jobType + ",</span>  &nbsp;<span id='job-category'>" + job.jobCategory + "</span></div>" +
                 "<hr>" +
                 "<div class='display-flex'>  <span>Posted &nbsp;</span><span id='posted-date'>" + calculateDays(job.postingDate) + " &nbsp;</span><span></span> days ago</span></div>"
                 + "</div></div>"
