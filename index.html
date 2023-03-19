@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recruitement</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="./assets/js/jobs.js" type="text/javascript"></script>
     <script src="./assets/js/include-html-files.js" type="text/javascript"></script>
 
@@ -15,115 +15,72 @@
 </head>
 
 <body>
-
-
+    <div w3-include-html="./html/header.html"></div>
     <main>
-
-
-        <!-- <div class="content"> -->
-        <div w3-include-html="./html/header.html"></div>
-
-
-
-
-
-        <div class="body">
+        <div class="job-feed">
+            <div class="job-feed-header">
             <h1>Find your dream Job </h1>
-            <h3>There are 500+ available jobs</h3>
-            <form class="main-form">
-                <h3>Find Job</h3>
-                <div class="row">
-                    <div class="col-md-9">
-                        <div class="row">
-                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+            <h3>There are 5+ available jobs</h3>
+            <h3>Find Job</h3>
+        </div>
+      
+                    <div class="job-feed-search">
+                        <div class=" container-fluid row pad0">
+                            <div class="search-items col-xs-12 col-sm-12 col-md-3 col-lg-3 pad0">
                                 <label>
-                                    <h6>Place</h6>
+                                    <h6>Job Category</h6>
                                 </label>
-                                <input class="form-control" placeholder="" type="text" name="">
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                <label>
-                                    <h6>Category</h6>
-                                </label>
-                                <select class="form-control" name="Any">
-                                    <option>Which Department</option>
-                                    <option>Software Engineer</option>
-                                    <option>Front-End Dev</option>
-                                    <option>Back-End Dev</option>
+                                <select class="form-control" name="Any" onchange="selectFilterType('jobCategory',this.value);">
+                                    <option value = "null">Select</option>
+                                    <option value = "Permanent">Permanent</option>
+                                    <option value = "Temprarory">Temprarory</option>
+                                    <option value = "Contract">Contract</option>
+                      
                                 </select>
                             </div>
-                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                            <div class="search-items col-xs-12 col-sm-12 col-md-3 col-lg-3 pad0">
                                 <label>
-                                    <h6>Min Price</h6>
+                                    <h6>Job type</h6>
                                 </label>
-                                <input class="form-control" placeholder="00.0" type="text" name="00.0">
+                                <select class="form-control" name="Any"   onchange="selectFilterType('jobType',this.value);" >
+                                    <option value = "null">Select</option>
+                                    <option value = "Part-time">Part-time</option>
+                                    <option value = "Full-time">Full-time</option>
+                      
+                                </select>
                             </div>
-                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                <label>
-                                    <h6>Year of Experience</h6>
-                                </label>
-                                <input class="form-control" placeholder="Any" type="text" name="Any">
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                <label>
-                                    <h6>When do you planning to work ?</h6>
-                                </label>
-                                <input class="form-control" placeholder="Any" type="date" name="Any">
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                <label>
-                                    <h6>Max Price</h6>
-                                </label>
-                                <input class="form-control" placeholder="00.0" type="text" name="00.0">
+                        </div>
+                        <div class=" container-fluid row pad0">
+                            <div class="serch-item-btn col-12 pad0">
+                                <div><button type="button" class="btn-primary" onclick="filterJobFeeds()">Filter Job</button></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                        <a href="#">search</a>
-                    </div>
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-            </form>
-            <h3> <b> You may interested in </b> </h3>
+                    
+     
+                    <div class="job-feed-header"><h3> <b> You may interested in </b> </h3></div>
             <div class="job-feed">
                 <div class="container-fluid row card-align">
                     <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 pad0">
-                        <h4 class='' onclick="navigateToDetailPage()">job.jobPosition </h4>
                         <div id="jobs-postings">
 
                         </div>
+                        
                     </div>
                 </div>
             </div>
 
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>\
+            
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
 
         </div>
-
-
-
-            <!-- <div w3-include-html="./html/job-details.html"></div> -->
-
-        <div w3-include-html="./html/footer.html"></div>
-        <!-- </div> -->
-        <!-- jobfound. -->
     </main>
-    </div>
+    <div w3-include-html="./html/footer.html"></div>
     <script>
         getjobVacancies()
         includeHTML();
-        // // getjobByJobId(1);
     </script>
 </body>
 
