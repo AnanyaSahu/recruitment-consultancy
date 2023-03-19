@@ -1,142 +1,173 @@
-
-.row{
-    margin-left: 0px;
-    margin-right: 0px;
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
-.display-flex{
-    display: inline-flex;
-}
-.display-content{
-    display: contents;
-}
-.card{
-    min-height: 225px;
+.display-flex {
+  display: inline-flex;
 }
 
-.row2{
+.display-content {
+  display: contents;
+}
+
+.card {
+  min-height: 225px;
+}
+
+.row2 {
   margin-bottom: 50px;
 }
 
-.apply-job-btn{
-    float: right;
-    position: absolute;
-    right: 14px;
+.apply-job-btn {
+  float: right;
+  position: absolute;
+  right: 14px;
 }
 
-.pad0{
-    padding: 0%;
+.pad0 {
+  padding: 0%;
 }
 
-.pad-left{
-    padding-right: 0%;
+.pad-left {
+  padding-right: 0%;
 }
 
 .benefit {
-    width: 156px;
-    height: 72px;
-    display: inline-block;
-    text-align: center;
-    box-sizing: border-box;
-    overflow: hidden;
+  width: 156px;
+  height: 72px;
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .benefit-label {
-    font-size: 13px;
-    margin-top: 5px;
-    padding: 0 25px;
+  font-size: 13px;
+  margin-top: 5px;
+  padding: 0 25px;
 }
- .benefit-img {
-    width: 20px;
-    height: 20px;
+
+.benefit-img {
+  width: 20px;
+  height: 20px;
 }
 
 /* Breadcrumb CSS start; taken from https://www.w3schools.com/howto/howto_css_breadcrumbs.asp */
 ul.breadcrumb {
-    padding: 10px 16px;
-    list-style: none;
-    margin-bottom: 0px;
-  }
-  ul.breadcrumb li {
-    display: inline;
-    font-size: 18px;
-  }
-  ul.breadcrumb li+li:before {
-    padding: 8px;
-    color: black;
-    content: "/\00a0";
-  }
-  ul.breadcrumb li a {
-    color: #0275d8;
-    text-decoration: none;
-  }
-  ul.breadcrumb li a:hover {
-    color: #01447e;
-    text-decoration: underline;
-  }
-  /* Breadcrumb CSS End; taken from https://www.w3schools.com/howto/howto_css_breadcrumbs.asp */
+  padding: 10px 16px;
+  list-style: none;
+  margin-bottom: 0px;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+/* Breadcrumb CSS End; taken from https://www.w3schools.com/howto/howto_css_breadcrumbs.asp */
 
 
-  /* Apply Job Modal CSS Start */
-  input[type=text]{
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-  }
+/* Apply Job Modal CSS Start */
+input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
 
-  .apply-modal {
-    display: inline-flex; 
-    z-index: 2; 
-    top: 210px; 
-    align-content: center;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.4); 
-  }
+.apply-modal {
+  display: inline-flex;
+  z-index: 2;
+  top: 210px;
+  align-content: center;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4);
+}
 
-  .apply-modal-container{
-    display: none; 
-    position: fixed;
-    top: 0;
-    overflow: auto;
-    z-index: 1; 
-    width: 100%;
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .apply-modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
+.apply-modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  overflow: auto;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
 
-  /* Apply Job Modal CSS End */
+/* Modal Content */
+.apply-modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
 
-  /* Toast Notification Start */
-  #toastNotification {
-    display: none; /* Hidden by default. Visible on click */
-    min-width: 360px;
-    position: fixed;
-    left: 45%;
-    bottom: 60px;
-    color: #fff;
-    background-color: rgb(44, 175, 44);
-    text-align: center;
-    border-radius: 14px;
-    padding: 20px;
-   
-  }
-    /* Toast Notification End */
+/* Apply Job Modal CSS End */
 
-  .errorMsg{
-    fon: red;
-  }
+/* Toast Notification Start */
+#toastNotification {
+  display: none;
+  /* Hidden by default. Visible on click */
+  min-width: 360px;
+  position: fixed;
+  /* left: 45%; */
+  bottom: 60px;
+  color: #fff;
+  background-color: rgb(56, 104, 56);
+  text-align: center;
+  border-radius: 14px;
+  padding: 20px;
+  justify-content: center;
+
+}
+
+/* Toast Notification End */
+
+.errorMsg {
+  /* fon: red; */
+}
+
+#toastNotificationcc {
+  display: block;
+  /* Hidden by default. Visible on click */
+ 
+  position: fixed;
+  /* left: 45%; */
+  bottom: 60px;
+  color: #fff;
+  background-color: rgb(56, 104, 56);
+  text-align: center;
+  border-radius: 14px;
+  padding: 20px;
+  justify-content: center;
+}

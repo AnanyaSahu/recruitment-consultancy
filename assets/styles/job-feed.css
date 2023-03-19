@@ -1,33 +1,33 @@
-
-*{
-    background-image:url('../../resim.jpg');
+* {
+    /* background-image:url('../../resim.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;  
+    background-size: cover;   */
 }
 
-h1{
-    text-align: center;
-    color:#ee580f;
+h1 {
+    /* text-align: center; */
+    color: #ee580f;
 }
 
-h3{
-    text-align: center;
+h3 {
+    /* text-align: center; */
 }
-h6{
-    color:white;
+
+h6 {
+    /* color:white;
     font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
+    font-family: Georgia, 'Times New Roman', Times, serif; */
+
 }
 
-body{
-    
-    display: flex;
-    justify-content: center;
+body {
+
+    /* display: flex;
+    justify-content: center; */
 }
 
-.main-form a {
+/* .main-form a {
     background: #ee580f;
     color: #fff;
     float: left;
@@ -37,24 +37,17 @@ body{
     padding: 10px 77px;
     margin: 57px 0px 0px 25px;
     text-decoration: none;
-}
-.form-control {
-    border: white solid 2px;
-    padding: 10px 15px;
-    border-radius: inherit;
-    margin-bottom: 10px;
-    color: #ee580f;
-    font-weight: bold;
-}
+} */
 
+/* 
 .img-container {
     float: left;
     width: 28.33%;
     height: 200px;
     text-align: center;
-}
+} */
 
-.img-container img {
+/* .img-container img {
     max-width: 100%;
     height: 100%;
     object-fit: cover;
@@ -64,12 +57,12 @@ body{
     margin-top: 10px;
     font-size: 14px;
     font-weight: bold;
-}
+} */
 
 /* Image Zoom
 https: //www.dijitalteknoloji.net/bilgisayar/uzerine-gelince-buyuyen-resim-yapma.html
 */
-.foto-zoom {
+/* .foto-zoom {
     position: relative;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -86,4 +79,4 @@ https: //www.dijitalteknoloji.net/bilgisayar/uzerine-gelince-buyuyen-resim-yapma
     -ms-transform: scale(1.2);
     -moz-transform: scale(1.2);
     transform: scale(1.2);
-}
+} */
