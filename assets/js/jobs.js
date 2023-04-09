@@ -8,6 +8,7 @@ let selectedFilter = { 'jobCategory': "null", 'jobType': "null" }
 $(document).ready(function () {
     $("#apply-modal-btn").click(function () {
         $("#apply-modal-container").show();
+        
     });
 });
 
